@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+body{
+    background-color: #FFF2E7;
+    width: 100%;
+}
+
+p{
+    font-size: 20px;
+}
+/*inicio navbar*/
+
+section, 
+footer{
+    padding: 50px 0;
+
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding: 10px 0;
+    width: 100%; 
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: #474F2F;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+    padding: 10px 20px;
+    margin-right: 20px;
+
+}
+
+nav ul a::after{
+    content:"" ;
+    background-color: #0097B2;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+
+nav a img{
+    width: 235px;
+    height: 65px;
+}
+
+nav .menu-icon {
+    cursor: pointer;
+    font-size: 25px;
+    color: #474F2F;
+    display: none;
+}
+
+nav .closed-icon{
+    display: none;
+    font-size: 30px;
+    color: #474F2F;
+    cursor: pointer;
+}
+
+nav .menu-icon:hover {
+    color: #0097B2;
+}
+
+nav .closed-icon:hover {
+    color: #0097B2;
+}
+/*fim navbar*/
+
+/*inicio conteudo home*/
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.8;
+    max-height: 80vh;
+    margin-bottom: 40px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;   
+}
+
+.overlay-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.overlay-text h3 {
+    font-size: 20px;
+    color: #474F2F;
+}
+
+.texto .botoes {
+    margin-top: 30px;
+}
+
+.texto .botoes button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.texto .botoes button.overlay {
+    background: #474F2F;
+    color: white;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+
+.botoes:hover button.overlay {
+    background-color: #C4D7A4;
+}
+/* fim conteudo home */
+
+
+.adocao{
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+.adocao .container {
+    flex-flow: column;
+    width: 100%;
+    flex: 33.33%;
+    padding: 5px;
+    align-items: center;
+}
+
+.adocao h1{
+    text-align: center;
+    color: #474F2F;
+    font-size: 35px;
+}
+.informacao h1{
+    text-align: center;
+    color: #474F2F;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+
+.adocao p{
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 40%;
+    
+}
+.adocao .card-item{
+    background-color: #e1efcc;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 300px;
+    
+    
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Define quatro colunas igualmente espaçadas */
+  gap: 20px; /* Espaço entre as colunas */
+}
+.adocao .card-item img{
+    margin: 10px;
+    border-radius: 5px;
+    height: 200px;
+    width: 250px ;
+}
+.adocao .card-item p{
+    margin: 5px;
+}
+  
+  
+.itens-textos h1{
+    font-size: 40px;
+    color: #474F2F;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.itens-textos p{
+    color: black;
+    text-align: justify;
+}
+
+.itens-textos {
+    text-align: justify;
+}
+
+.itens {
+    display: flex;
+    margin: 10px;
+}
+  
+.img img {
+    width: 200px;
+    height: 200px;
+    border: solid 3px #000;
+    float: left;
+} 
+.texto_img {
+    width: 300px;
+    height: 200px;
+    float: left;
+    border: solid #474F2F 3px;
+
+}
+.texto_img p {
+    margin: 5px;
+    text-align: justify;
+}  
+.botoes {
+    margin-top: 30px;
+}
+
+.botoes button {
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.botoes button.overlay {
+    background: #474F2F;
+    color: white;
+    
+}
+
+.botoes:hover button.overlay {
+    background-color: #C4D7A4;
+}
+
+
+
+.botoes button.logout {
+    margin-top: 1px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 40px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.botoes button.logout {
+    background: #474F2F;
+    color: white;
+    
+}
+
+.botoes:hover button.logout {
+    background-color: #C4D7A4;
+}
+
+.adocao .publi-icons a{
+    cursor: pointer;
+    position: fixed;
+    bottom: 65px ; /* Altere conforme necessário */
+    right: 1px;
+}
+
+.adocao .publi-icons a i {
+    font-size: 50px; 
+    color: rgba(36, 65, 45, 0.5);
+    padding: 10px;
+    
+}
+.adocao .publi-icons a:hover i{
+    color: #474F2F;
+}
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #e1efcc;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.gradient-custom .perinformacao i.material-icons{
+    font-size: 80px;
+
+}
+
+@media (max-width: 1100px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 92%; 
+    }
+    .publi-icons a{
+        position: fixed;
+        bottom: 60px ; /* Altere conforme necessário */
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 1250px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left:0;
+        background: #C4D7A4;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+    .ul a{
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    nav .menu-icon{
+        display: block;
+
+    }
+    nav .closed-icon{
+       display: block;
+       position: absolute;
+       top: 46px;
+       right: 28px;
+    }
+    
+}
+
+@keyframes vibrar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.card-item{
+    background-color: #e1efcc;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 100%;   
+}
+
+.card-item p{
+    margin: 20px;
+    text-align: center;
+}
+.card-item-info{
+    background-color: #e1efcc;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 50%;
+    
+}
+.card-item-info p{
+    margin: 20px;
+}
+.card-infos {
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    
+    
+  }
+
+.cntt{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.container-cntt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-us h1{
+    font-size: 40px;
+    color: #474F2F;
+    text-align: center;
+}
+
+.contact-us p{
+    color: #75835d;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 25px;
+    margin-bottom: 3.8rem;
+    text-align: center;
+}
+.contact-us form{
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.contact-us form input,
+form textarea{
+    width: 100%;
+    padding: 17px;
+    border-color: #e1efcc;
+    outline: none;
+    background: #ffffff;
+    color: #75835d;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-us textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-us form .btn{
+    display: inline-block;
+    background: #474F2F;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+    color: #fff;
+}
+.contact-us form .btn:hover{
+    border: 2px solid #e1efcc;
+    background-color: #474F2F;
+}
+
+.contact-us {
+    text-align: center; 
+    margin: 0 auto; 
+    width: 80%;
+}
+
+.text p{
+    text-align: center;
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    margin-top:120px;
+    margin-bottom: 240px;
+}
+.texto {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px;
+}
+.texto-1 {
+    background-color: #e1efcc;
+    border-radius: 14px;
+    text-align: justify;
+    width: 50%;
+    padding: 20px; /* Adicione o padding desejado aqui */
+    margin-top: 60px;
+    margin: 30px;
+}
+
+.mapa {
+    text-align: center;
+}
+.conteudo-imagem-texto {
+    display: flex; 
+    align-items: center; 
+}
+  
+.conteudo-imagem-texto img {
+    width: 50%;
+    border-radius: 14px;
+    height: 50%;
+    margin-left: 20px;
+}
+
+.imagem{
+    align-items: center; 
+    display: flex;
+}
+.imagem img{
+    width: 50%; /* Faz a imagem ocupar toda a largura do contêiner */
+    border-radius:14px ;
+    margin: 20px;
+
+}
+.denuncia h1{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.denuncia .itens-textos{
+    background-color: #e1efcc;
+    border-radius: 14px;
+    text-align: justify;
+    width: 100%;
+    padding: 25px; /* Adicione o padding desejado aqui */
+}
+.perfil i{
+    width:100%;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Define quatro colunas igualmente espaçadas */
+        gap: 1px; /* Espaço entre as colunas */
+    }
+    .adocao .card-item img{
+        margin: 5px;
+        height: 100px;
+        width: 190px ;
+    }
+    .adocao .card-item{
+        width: 200px;
+    }
+    .text p{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    .conteudo-imagem-texto {
+        display: block; 
+        align-items: center; 
+    }
+      
+    .conteudo-imagem-texto img {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .texto-1 {
+        width: 100%;
+        margin: 0px;
+    }
+    
+  }
+  
+
