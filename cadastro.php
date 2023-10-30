@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
     
     if ($conn->query($sql) === TRUE) {
         $_SESSION['email'] = $email;
-        header('Location: login.html');
+        header('Location: index.html');
     } else {
         echo "<script>alert('Ocorreu um erro ao cadastrar. Tente novamente.');";
         echo "window.location='cadastro.html';</script>";

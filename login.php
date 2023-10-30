@@ -25,6 +25,6 @@ session_start();
     } else {
         // Exibir a mensagem de erro apenas quando o login falhar
         echo "<script>alert('Email ou senha incorretos. Por favor, tente novamente.');";
-        echo "window.location='login.html';</script>";
+        echo "window.location='index.html';</script>";
     }
 ?>

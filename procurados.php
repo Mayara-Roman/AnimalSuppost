@@ -7,7 +7,7 @@
 
   if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
     // Se o usuário não estiver logado, redirecione para a página de login
-    header('Location: login.html');
+    header('Location: index.html');
     exit();
 }
 ?>
